@@ -2,6 +2,10 @@
 
 A basic tic-tac-toe game.
 
+![screenshot](./assets/start.jpg)
+
+![screenshot](./assets/choice.jpg)
+
 ![screenshot](./assets/black.jpg)
 
 ![screenshot](./assets/white.jpg)

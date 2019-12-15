@@ -26,7 +26,9 @@ button {
 }
 
 .newGameBtn,
-.resetScoreBtn {
+.resetScoreBtn,
+.blackButton,
+.whiteButton {
   margin: 10px 20px;
   min-width: 130px;
 }
