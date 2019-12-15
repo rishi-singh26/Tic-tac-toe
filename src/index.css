@@ -19,18 +19,16 @@ code {
   border-radius: 7px;
 }
 
-.btn1,
-.btn2,
-.btn3,
-.btn4,
-.btn5,
-.btn6,
-.btn7,
-.btn8,
-.btn9 {
+button {
   margin: 2px;
   min-width: 60px;
   min-height: 60px;
+}
+
+.newGameBtn,
+.resetScoreBtn {
+  margin: 10px 20px;
+  min-width: 130px;
 }
 
 /* .link {
