@@ -1,3 +1,11 @@
+# Tic Tac Toe
+
+A basic tic-tac-toe game.
+
+![screenshot](./assets/black.jpg)
+
+![screenshot](./assets/white.jpg)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
