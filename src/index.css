@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  background-color: rgb(58, 108, 200);
+  /* background-image: url(./black1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 code {
@@ -14,7 +20,7 @@ code {
 
 .game {
   /* margin: 80px 600px; */
-  background-color: rgb(33, 101, 228);
+  background-color: rgb(58, 108, 200);
   /* padding: 60px; */
   border-radius: 7px;
 }

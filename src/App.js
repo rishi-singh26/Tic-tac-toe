@@ -316,7 +316,7 @@ class App extends Component {
         ["d", "e", "f"],
         ["g", "h", "i"]
       ],
-      player: 0,
+      player: 1,
       draw: false,
       memoryArray: []
     });
@@ -454,6 +454,19 @@ class App extends Component {
     }
   };
 
+  modalInfoComponent = () => {
+    if (this.state.play == 0) {
+      return (
+        <h5 className="m-3">
+          If you close this box WITHOUT choosing then player BLACK
+          will go first!!
+        </h5>
+      );
+    } else {
+      return <div></div>;
+    }
+  }
+
   playerChoiceBlack = () => {
     this.setState({ player: 1, play: 0 });
     this.setState({ modalClosed: !this.state.modalClosed });
@@ -496,7 +509,7 @@ class App extends Component {
                   </h2>
                 </NavLink>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink href="https://codepen.io/rishisingh-26/">
                   <h2>
                     <IconContext.Provider
@@ -506,16 +519,18 @@ class App extends Component {
                     </IconContext.Provider>
                   </h2>
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
             </Nav>
-            <NavbarText>
+            <NavbarText className=" ml-3 mr-3">
+              <this.startGameBtn />
+            </NavbarText>
+            <NavbarText className=" ml-3 mr-3">
               <h4>By Rishi Singh</h4>
             </NavbarText>
           </Collapse>
         </Navbar>
         <br />
         <div>
-          <this.startGameBtn />
           <Modal
             isOpen={!this.state.modalClosed}
             // toggle={toggle}
@@ -537,10 +552,11 @@ class App extends Component {
               >
                 White
               </Button>
+              <this.modalInfoComponent />
             </ModalBody>
             <ModalFooter>
               <Button color="secondary" onClick={this.toggleModal}>
-                Cancel
+                Close
               </Button>
             </ModalFooter>
           </Modal>
